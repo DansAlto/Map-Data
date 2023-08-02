@@ -1,4 +1,4 @@
-localStorage.setItem(`test`, () => {
+localStorage.setItem(`test`,
     let random = Math.floor(Math.random() * (4 - 1) + 1);
 
     if (random === 1) {
@@ -10,4 +10,4 @@ localStorage.setItem(`test`, () => {
     } else if (random === 4) {
         Test = "tired";
     }
-});
+);
