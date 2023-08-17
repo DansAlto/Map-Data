@@ -19,4 +19,6 @@ function FetchData(Key) {
 
     }
 }
+
+// Requests!
 FetchData(`backgrounds/sleepy curtains.jpg`);
