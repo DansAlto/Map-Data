@@ -2,9 +2,9 @@ let cover = document.getElementById(`cover`);
 
 var root = document.querySelector(':root');
 
-root.style.setProperty('--cube', '#1c2ca680');
-root.style.setProperty('--cube2', '#101a6a80');
-root.style.setProperty('--cube3', '#09114e80');
+root.style.setProperty('--cube', '#0026ff80');
+root.style.setProperty('--cube2', '#00188380');
+root.style.setProperty('--cube3', '#01086380');
 
 function FetchData(Key) {
     if (Key.includes('.js')) {
