@@ -34,4 +34,4 @@ function FetchData(Key) {
 
 // Requests!
 FetchData(`scripts/snake.js`);
-FetchData(`backgrounds/sleepy curtains.jpg`);
+FetchData(`backgrounds/people.png`);
