@@ -1,17 +1,3 @@
-let CreateRoot = document.querySelector(':root');
-let CreateRootStyle = getComputedStyle(CreateRoot);
-
-let ClockPlate = document.createElement(`div`);
-
-let bluredbg = document.createElement(`div`);
-let TimeContainer = document.createElement(`div`);
-let DateContainer = document.createElement(`div`);
-let WeatherContainer = document.createElement(`div`);
-
-let WeatherIcon = document.createElement(`div`);
-let WeatherReport = document.createElement(`div`);
-let CityName = document.createElement(`div`);
-
 function CreateObject(name, backgroundcolor, width, height, zindex, right, left, top, bottom, position, appendtype) {
     name.style.backgroundColor = backgroundcolor;
     name.style.width = width;
@@ -38,6 +24,19 @@ function CreateObject(name, backgroundcolor, width, height, zindex, right, left,
     appendtype.appendChild(name);
 }
 
+let CreateRoot = document.querySelector(':root');
+let CreateRootStyle = getComputedStyle(CreateRoot);
+
+let ClockPlate = document.createElement(`div`);
+
+let bluredbg = document.createElement(`div`);
+let TimeContainer = document.createElement(`div`);
+let DateContainer = document.createElement(`div`);
+let WeatherContainer = document.createElement(`div`);
+
+let WeatherIcon = document.createElement(`div`);
+let WeatherReport = document.createElement(`div`);
+let CityName = document.createElement(`div`);
 
 //Objects
 CreateObject(ClockPlate, 'transparent', '60vh', '35vh', 11, '0px', undefined, '0px', undefined, 'absolute', document.body);
