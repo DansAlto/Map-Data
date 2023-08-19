@@ -35,5 +35,5 @@ function FetchData(Key) {
 
 // Requests!
 FetchData(`scripts/snake.js`);
-FetchData(`scripts/weather&time.js`);
+/* FetchData(`scripts/weather&time.js`); */
 FetchData(`backgrounds/sleepy curtains.jpg`);
