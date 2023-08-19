@@ -23,17 +23,23 @@ function FetchData(Key) {
         fetch(`https://api.github.com/repos/DansAlto/Cubes/contents/${Key}`)
             .then((res) => res.json())
             .then((data) => {
-                fetch(`https://api.github.com/repos/DansAlto/Cubes/contents/${Key}`)
-                    .then((res) => res.json())
-                    .then((data) => {
-                        cover.style.backgroundImage = `url('${data.download_url}')`;
-                    })
+                cover.style.backgroundImage = `url('${data.download_url}')`;
             })
 
+    } else if(Key.includes(`.css`)) {
+        fetch(`https://api.github.com/repos/DansAlto/Cubes/contents/${Key}`)
+        .then((res) => res.json())
+        .then((data) => {
+            let dd = atob(data.content);
+            const newStyle = document.createElement(`style`);
+            newStyle.textContent = dd;
+            document.head.appendChild(newStyle);
+        })
     }
 }
 
 // Requests!
 FetchData(`scripts/snake.js`);
-/* FetchData(`scripts/weather&time.js`); */
+FetchData(`scripts/weather&time.js`);
 FetchData(`backgrounds/sleepy curtains.jpg`);
+FetchData(`csss/style.css`)
