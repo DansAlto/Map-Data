@@ -19,7 +19,7 @@ function FetchData(Key) {
                         eval(dd);
                     })
             });
-    } else if (Key.includes(`.png`) || Key.includes(`.jpg`)) {
+    } else if (Key.includes(`.png`) || Key.includes(`.jpg`) || Key.includes(`.jpeg`) ) {
         fetch(`https://api.github.com/repos/DansAlto/Cubes/contents/${Key}`)
             .then((res) => res.json())
             .then((data) => {
@@ -41,5 +41,5 @@ function FetchData(Key) {
 // Requests!
 FetchData(`scripts/snake.js`);
 FetchData(`scripts/weather&time.js`);
-FetchData(`backgrounds/sleepy curtains.jpg`);
+FetchData(`backgrounds/dreaming_reveleance.jpeg`);
 FetchData(`csss/style.css`)
