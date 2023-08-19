@@ -17,7 +17,7 @@ function grow(size, despawnrate, despawn, speed, spawnside) {
     let perc = 80;
     let left_chance = (Math.random() * (101 - 0) + 0);
 
-    let YDeadZoneMin = 10;
+    let YDeadZoneMin = -10;
     let YDeadZoneMax = window.innerHeight;
 
     let XDeadZoneMin = 10;
