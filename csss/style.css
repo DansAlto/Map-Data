@@ -26,6 +26,7 @@ body {
     zoom: 0.8;
     transition: 1s all;
     transform: translateX(60vh);
+    user-select: none;
 }
 
 .bluredbg {
