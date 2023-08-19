@@ -5,7 +5,7 @@ var root = document.querySelector(':root');
 root.style.setProperty('--cube', '#0026ff80');
 root.style.setProperty('--cube2', '#00188380');
 root.style.setProperty('--cube3', '#01086380');
-root.style.setProperty('--body', '#3c0086');
+root.style.setProperty('--body', 'black');
 
 function FetchData(Key) {
     if (Key.includes('.js')) {
