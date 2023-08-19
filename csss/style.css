@@ -1,1 +1,100 @@
+:root {
+    --body: transparent;
+    --weather_style: black;
+    --cube: #1c2ca680;
+    --cube2: #101a6a80;
+    --cube3: #09114e80;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: auto;
+}
 
+body {
+    background-color: var(--body);
+    overflow: hidden;
+}
+
+.clock-plate {
+    opacity: 0;
+    background-color: transparent;
+    width: 60vh;
+    height: 25vh;
+    z-index: 11;
+    right: 0px;
+    top: 0px;
+    position: absolute;
+    zoom: 0.8;
+    transition: 1s all;
+    transform: translateX(60vh);
+}
+
+.bluredbg {
+    opacity: 0.5;
+    background: linear-gradient(45deg, rgb(0, 0, 0), #70707094 , #7c7c7c94, #00000094);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    filter: blur(0.3vh);
+    border-bottom: 0.5vh solid #70707094;
+    border-left: 0.5vh solid #70707094;
+    border-image: linear-gradient(#70707094, rgba(0, 0, 0)) 1;
+}
+
+.time-cont {
+    width: 30vh;
+    height: 18vh;
+    position: absolute;
+    left: 5vh;
+    top: 2.5vh;
+    font-family: cursive;
+    color: var(--body);
+    font-size: 10vh;
+    text-align: center;
+}
+
+.date-cont {
+    width: 32vh;
+    height: 3vh;
+    left: 5vh;
+    top: 15.5vh;
+    position: absolute;
+    color: var(--body);
+    font-family: cursive;
+    font-size: 2.8vh;
+    line-height: -1px;
+    text-align: center;
+}
+
+.weather-cont {
+    width: 15vh;
+    height: 15vh;
+    right: 8vh;
+    top: 6vh;
+    position: absolute;
+    font-size: 2vh;
+    text-align: center;
+    font-family: cursive;
+    color: var(--body);
+}
+
+.weathercon {
+    width: 8vh;
+    height: 8vh;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.weather-text {
+    width: 15vh;
+    height: 3.5vh;
+    position: absolute;
+    top: 7vh;
+}
+
+.place-name {
+    width: 15vh;
+    height: 3.5vh;
+    position: absolute;
+    top: 10vh;
+}
