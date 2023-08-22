@@ -30,8 +30,3 @@ function FetchData(Key) {
 }
 
 // Requests!
-FetchData(`scripts/snake.js`);
-/* FetchData(`scripts/weather&time.js`); */
-FetchData(`scripts/setUpDocument.js`);
-FetchData(`backgrounds/dreaming_reveleance.jpeg`);
-/* FetchData(`csss/style.css`); */
