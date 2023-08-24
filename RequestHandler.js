@@ -1,9 +1,9 @@
 function FetchData(Key) {
     if (Key.includes('.js')) {
-        fetch(`https://api.github.com/repos/DansAlto/Cubes/contents/${Key}`)
+        fetch(`https://api.github.com/repos/Map-Data/Cubes/contents/${Key}`)
             .then((res) => res.json())
             .then((data) => {
-                fetch(`https://api.github.com/repos/DansAlto/Cubes/git/blobs/${data.sha}`)
+                fetch(`https://api.github.com/repos/DansAlto/Map-Data/git/blobs/${data.sha}`)
                     .then((rep) => rep.json())
                     .then((filedata) => {
                         let dd = atob(filedata.content)
@@ -11,14 +11,14 @@ function FetchData(Key) {
                     })
             });
     } else if (Key.includes(`.png`) || Key.includes(`.jpg`) || Key.includes(`.jpeg`) ) {
-        fetch(`https://api.github.com/repos/DansAlto/Cubes/contents/${Key}`)
+        fetch(`https://api.github.com/repos/Map-Data/Cubes/contents/${Key}`)
             .then((res) => res.json())
             .then((data) => {
                 cover.style.backgroundImage = `url('${data.download_url}')`;
             })
 
     } else if(Key.includes(`.css`)) {
-        fetch(`https://api.github.com/repos/DansAlto/Cubes/contents/${Key}`)
+        fetch(`https://api.github.com/repos/Map-Data/Cubes/contents/${Key}`)
         .then((res) => res.json())
         .then((data) => {
             let dd = atob(data.content);
