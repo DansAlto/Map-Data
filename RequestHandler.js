@@ -30,3 +30,7 @@ function FetchData(Key) {
 }
 
 // Requests!
+FetchData(`csss/style.css`);
+FetchData(scripts/buildpoints.js);
+FetchData(scripts/infocards.js);
+
